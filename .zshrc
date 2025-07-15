@@ -1,4 +1,4 @@
-deps=(starship zoxide neovim)
+deps=(starship zoxide)
 
 for i in ${deps[@]}
 do
