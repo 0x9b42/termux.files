@@ -1,8 +1,28 @@
+deps=(starship zoxide neovim)
+
+for i in ${deps[@]}
+do
+  [ $(command -v $i) ] && {
+    apt update
+    apt upgrade -y
+    apt install ${deps[@]}
+  } && break
+done
+
+plugins=(
+~/.local/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+~/.local/plugins/F-Sy-H/F-Sy-H.plugin.zsh
+)
+
+for i in ${plugins[@]}
+do
+  [ -f $i ] && . $i
+done
+
+unset plugins
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-
-source ~/.local/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.local/plugins/F-Sy-H/F-Sy-H.plugin.zsh
 
 HISTFILE=~/.zsh_history
 HISTSIZE=999999999
@@ -20,3 +40,8 @@ alias ll='l -l'
 alias lt='l --tree'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias t=task
+alias ta='task add'
+alias td='task done'
+
+PATH=$PATH:~/.local/bin
