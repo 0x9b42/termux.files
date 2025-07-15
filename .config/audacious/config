@@ -1,0 +1,8 @@
+
+[audgui]
+filesel_path=/data/data/com.termux/files/home/Music
+
+[qtui]
+player_height=354
+player_width=712
+show_remaining_time=TRUE

@@ -1,0 +1,14 @@
+[Added Associations]
+text/plain=featherpad.desktop;nvim.desktop;leafpad.desktop;geany.desktop;
+text/css=leafpad.desktop;
+image/png=ristretto.desktop;mtpaint.desktop;lximage-qt.desktop;
+image/jpeg=mtpaint.desktop;lximage-qt.desktop;ristretto.desktop;
+text/markdown=featherpad.desktop;
+application/x-theme=nvim.desktop;featherpad.desktop;
+inode/directory=xfce4-file-manager.desktop;
+x-scheme-handler/trash=xfce4-file-manager.desktop;
+
+[Default Applications]
+inode/directory=xfce4-file-manager.desktop
+x-scheme-handler/trash=xfce4-file-manager.desktop
+
