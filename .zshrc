@@ -2,7 +2,7 @@ deps=(starship zoxide)
 
 for i in ${deps[@]}
 do
-  [ $(command -v $i) ] && {
+  [ ! $(command -v $i) ] && {
     apt update
     apt upgrade -y
     apt install ${deps[@]}
