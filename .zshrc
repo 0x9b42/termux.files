@@ -1,3 +1,4 @@
+fastfetch
 deps=(starship zoxide)
 
 for i in ${deps[@]}
